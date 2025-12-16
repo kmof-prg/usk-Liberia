@@ -1,14 +1,10 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
-import { serveStatic } from 'hono/cloudflare-workers'
 
 const app = new Hono()
 
 // Enable CORS
 app.use('/api/*', cors())
-
-// Serve static files
-app.use('/*', serveStatic({ root: './public' }))
 
 // Common layout and styles
 const layout = (title: string, content: string) => `
