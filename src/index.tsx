@@ -186,7 +186,7 @@ const layout = (title: string, content: string) => `
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p class="text-lg">&copy; 2024 United States of Kailasa Liberia. All rights reserved.</p>
+                <p class="text-lg">&copy; 2026 United States of Kailasa Liberia. All rights reserved.</p>
                 <p class="mt-2 text-md">Serving humanity through spiritual enlightenment and charitable activities</p>
             </div>
         </div>

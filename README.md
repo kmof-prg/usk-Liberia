@@ -128,7 +128,7 @@ curl http://localhost:3000
 
 ## 📄 License
 
-© 2024 United States of Kailasa Liberia. All rights reserved.
+© 2026 United States of Kailasa Liberia. All rights reserved.
 
 ## 🙏 Sacred Services
 
