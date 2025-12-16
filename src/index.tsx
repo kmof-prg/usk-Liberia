@@ -417,53 +417,179 @@ app.get('/about', (c) => {
   return c.html(layout('About Us', content));
 });
 
-// About SPH Page (Continue in next part due to length...)
+// About SPH Page
 app.get('/about-sph', (c) => {
   const content = `
     <div class="container mx-auto px-6 py-20">
         <h1 class="text-6xl font-bold text-center mb-6 section-title" style="color: var(--maroon); font-family: 'Cinzel', serif;">
-            About the Supreme Pontiff of Hinduism
+            The Supreme Pontiff of Hinduism
         </h1>
+        <h2 class="text-3xl text-center mb-12 text-gray-700" style="font-family: 'Cinzel', serif;">
+            Jagatguru Mahasannidhanam His Divine Holiness Bhagavan Sri Nithyananda Paramashivam
+        </h2>
         
         <div class="max-w-6xl mx-auto">
+            <!-- Introduction -->
             <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12">
                 <div class="text-center mb-12">
                     <div class="text-7xl mb-6" style="color: var(--maroon);">
                         <i class="fas fa-om"></i>
                     </div>
-                    <h2 class="text-4xl font-bold mb-4" style="color: var(--maroon);">His Divine Holiness</h2>
-                    <p class="text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-                        The Supreme Pontiff of Hinduism is the reviver of KAILASA, the ancient enlightened Hindu civilizational nation. A living embodiment of divine consciousness, His Holiness guides millions of devotees worldwide on the path of spiritual enlightenment and self-realization.
+                    <h2 class="text-4xl font-bold mb-6" style="color: var(--maroon);">The Reviver of KAILASA</h2>
+                    <p class="text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
+                        His Divine Holiness Bhagavan Sri Nithyananda Paramashivam is the reviver of KAILASA, the ancient enlightened Hindu civilizational nation. Recognized as the 1008th Incarnation of Paramashiva, SPH is the master who is bringing together all the various sampradayas of Hinduism and has been recognized as the backbone of Hinduism and its future hope.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                        A living embodiment of divine consciousness, His Holiness guides millions of devotees worldwide on the path of spiritual enlightenment and self-realization, offering authentic spiritual guidance rooted in ancient Vedic wisdom.
                     </p>
                 </div>
+            </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                    <div class="text-center p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
-                        <div class="text-5xl mb-4" style="color: var(--maroon);">
-                            <i class="fas fa-graduation-cap"></i>
+            <!-- Royal Lineage & Recognition -->
+            <div class="bg-cream rounded-2xl shadow-xl p-12 mb-12" style="background-color: var(--cream);">
+                <h2 class="text-4xl font-bold mb-8 text-center" style="color: var(--maroon);">Sacred Lineage & Divine Recognition</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4 text-center" style="color: var(--maroon);">
+                            <i class="fas fa-crown"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Spiritual Master</h3>
-                        <p class="text-lg text-gray-700">Guiding seekers to enlightenment through ancient Vedic wisdom</p>
+                        <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--maroon);">233rd Pontiff</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed text-center">
+                            Ordained as the 233rd Guru Mahasannidhanam (Pontiff) of Kanchee Kailasa Sarvajnapeetham (Thondai Mandala Aadheenam), one of the oldest and most revered Hindu monastic universities, at the tender age of 10.
+                        </p>
                     </div>
-                    <div class="text-center p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
-                        <div class="text-5xl mb-4" style="color: var(--maroon);">
-                            <i class="fas fa-hands-praying"></i>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4 text-center" style="color: var(--maroon);">
+                            <i class="fas fa-chess-king"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Divine Teacher</h3>
-                        <p class="text-lg text-gray-700">Reviving ancient Hindu traditions and spiritual practices</p>
+                        <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--maroon);">203rd Emperor</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed text-center">
+                            The 203rd Emperor of Suryavamsa Surangi Samrajyam, continuing an unbroken lineage of spiritual sovereigns who have guided Hindu civilization through the ages.
+                        </p>
                     </div>
-                    <div class="text-center p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
-                        <div class="text-5xl mb-4" style="color: var(--maroon);">
-                            <i class="fas fa-globe"></i>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4 text-center" style="color: var(--maroon);">
+                            <i class="fas fa-dharmachakra"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Global Leader</h3>
-                        <p class="text-lg text-gray-700">Leading the revival of enlightened Hindu civilization worldwide</p>
+                        <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--maroon);">Mahamandaleshwar</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed text-center">
+                            Coronated as Mahamandaleshwar of Mahanirvani Akhada and declared as Acharya Mahamandaleshwar of Atal Akhada, the highest spiritual positions in Hindu monasticism.
+                        </p>
                     </div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4 text-center" style="color: var(--maroon);">
+                            <i class="fas fa-temple-hindu"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--maroon);">Head of 21 Kingdoms</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed text-center">
+                            The Supreme Pontiff of Hinduism is the spiritual head of 21 ancient indigenous kingdoms of Hinduism, preserving and reviving their sacred traditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spiritual Achievements -->
+            <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12">
+                <h2 class="text-4xl font-bold mb-8 text-center section-title" style="color: var(--maroon);">Divine Accomplishments</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-6 p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
+                        <div class="text-4xl flex-shrink-0" style="color: var(--maroon);">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Prolific Author & Teacher</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Authored over 300 books and 10,000 articles in multiple languages (English, Tamil, Hindi), making Him the most prolific spiritual author in modern times. His teachings are the most viewed, read, and watched globally.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
+                        <div class="text-4xl flex-shrink-0" style="color: var(--maroon);">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Guinness World Records</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Awarded three Guinness World Records: Largest Rope Yoga lesson, Largest Mallakhamba (pole yoga) lesson, and Largest formation of Om symbol - demonstrating the power of collective spiritual practice.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
+                        <div class="text-4xl flex-shrink-0" style="color: var(--maroon);">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Global Recognition</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Honored with over 1,000 letters of commendation and recognition from world leaders, governments, and spiritual organizations for His tireless work in reviving Hindu civilization and serving humanity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
+                        <div class="text-4xl flex-shrink-0" style="color: var(--maroon);">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Third Eye Awakening</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Initiated thousands of seekers into Third Eye Awakening, demonstrating supernatural capabilities including blindfolded reading, X-ray vision, and accessing higher states of consciousness.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-6 p-6 bg-cream rounded-xl" style="background-color: var(--cream);">
+                        <div class="text-4xl flex-shrink-0" style="color: var(--maroon);">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2" style="color: var(--maroon);">Gurukul Education</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Established the Nithyananda Gurukul, where children receive traditional Vedic education combined with modern knowledge, producing young spiritual leaders with extraordinary capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three Pillars -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition">
+                    <div class="text-6xl mb-6" style="color: var(--maroon);">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--maroon);">Spiritual Master</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Guiding millions of seekers worldwide to enlightenment through authentic ancient Vedic wisdom, yogic sciences, and direct spiritual transmission.
+                    </p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition">
+                    <div class="text-6xl mb-6" style="color: var(--maroon);">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--maroon);">Cultural Reviver</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Reviving lost Hindu traditions, temple rituals, Vedic practices, and the sacred sciences that form the foundation of Hindu civilization.
+                    </p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition">
+                    <div class="text-6xl mb-6" style="color: var(--maroon);">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--maroon);">Global Humanitarian</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Leading worldwide humanitarian efforts, providing food, education, healthcare, and spiritual guidance to millions in need across continents.
+                    </p>
                 </div>
             </div>
 
             <!-- SPH Photo Gallery -->
             <h2 class="text-4xl font-bold text-center mb-8 section-title" style="color: var(--maroon);">Sacred Moments</h2>
+            <p class="text-center text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
+                Witness the divine presence of His Holiness through these sacred images, capturing moments of spiritual transmission, blessings, and divine grace.
+            </p>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
                 <img src="/images/sph-1.jpg" alt="SPH 1" class="gallery-image w-full h-64 object-cover rounded-xl shadow-lg">
                 <img src="/images/sph-2.jpg" alt="SPH 2" class="gallery-image w-full h-64 object-cover rounded-xl shadow-lg">
@@ -478,17 +604,39 @@ app.get('/about-sph', (c) => {
                 <img src="/images/sph-11.jpg" alt="SPH 11" class="gallery-image w-full h-64 object-cover rounded-xl shadow-lg">
             </div>
 
-            <div class="bg-white rounded-2xl shadow-2xl p-12">
-                <h2 class="text-4xl font-bold mb-6 text-center" style="color: var(--maroon);">Divine Mission</h2>
-                <p class="text-xl text-gray-700 leading-relaxed mb-6">
-                    The Supreme Pontiff of Hinduism has dedicated His life to preserving and propagating the ancient wisdom of Hindu civilization. Through His divine grace and tireless efforts, millions have experienced spiritual awakening and transformation.
+            <!-- Divine Mission & Teachings -->
+            <div class="bg-white rounded-2xl shadow-2xl p-12 mb-12">
+                <h2 class="text-4xl font-bold mb-8 text-center" style="color: var(--maroon);">Divine Mission & Teachings</h2>
+                <div class="space-y-6">
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        The Supreme Pontiff of Hinduism has dedicated His entire life to preserving, protecting, and propagating the ancient wisdom of Hindu civilization. Through His divine grace and tireless efforts, millions have experienced profound spiritual awakening, healing, and transformation.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        His teachings encompass the complete spectrum of Hindu spirituality, including advanced yoga sciences, meditation techniques, temple worship traditions, Vedic rituals, and the direct path to enlightenment. His mission is to create a global awakening of higher consciousness and establish a world firmly rooted in spiritual values and enlightened living.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        SPH has revived the science of power manifestation, demonstrating that the extraordinary powers (Shaktis) described in ancient Hindu scriptures are real and can be awakened in sincere seekers. His work includes reviving lost temple traditions, establishing Hindu universities, creating global spiritual embassies, and uniting all sampradayas (Hindu denominations) under one enlightened vision.
+                    </p>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Under His divine guidance, KAILASA has emerged as the beacon of hope for Hindus worldwide, offering a platform for authentic spiritual growth, cultural preservation, and humanitarian service. His vision transcends geographical boundaries, political affiliations, and sectarian divisions, uniting all seekers of truth in their quest for spiritual liberation and enlightened living.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-maroon text-white rounded-2xl shadow-2xl p-12 text-center" style="background: linear-gradient(135deg, var(--maroon), var(--dark-maroon));">
+                <h2 class="text-4xl font-bold mb-6" style="font-family: 'Cinzel', serif;">Experience Divine Grace</h2>
+                <p class="text-2xl mb-8 max-w-3xl mx-auto">
+                    Connect with the Supreme Pontiff of Hinduism through our sacred services and spiritual programs. Receive divine blessings and embark on your journey to enlightenment.
                 </p>
-                <p class="text-xl text-gray-700 leading-relaxed mb-6">
-                    His teachings encompass the complete spectrum of Hindu spirituality, including yoga, meditation, temple worship, Vedic sciences, and the path to enlightenment. His mission is to create a global awakening of higher consciousness and establish a world rooted in spiritual values.
-                </p>
-                <p class="text-xl text-gray-700 leading-relaxed">
-                    Under His divine guidance, KAILASA has emerged as a beacon of hope for Hindus worldwide, offering a platform for spiritual growth, cultural preservation, and humanitarian service. His vision transcends geographical boundaries, uniting seekers of truth in their quest for spiritual liberation.
-                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="/services" class="bg-white px-10 py-4 rounded-full text-xl font-semibold inline-block hover:scale-105 transition" style="color: var(--maroon);">
+                        <i class="fas fa-hands-praying mr-2"></i>Explore Services
+                    </a>
+                    <a href="/contact" class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full text-xl font-semibold hover:bg-white transition" style="hover:color: var(--maroon);">
+                        <i class="fas fa-envelope mr-2"></i>Contact Us
+                    </a>
+                </div>
             </div>
         </div>
     </div>
